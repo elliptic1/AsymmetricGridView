@@ -1,0 +1,7 @@
+int color dark_red 0x7f030000
+int color red 0x7f030001
+int drawable ic_launcher 0x7f020000
+int drawable item_divider_horizontal 0x7f020001
+int drawable item_divider_vertical 0x7f020002
+int drawable text_view_background_selector 0x7f020003
+int string app_name 0x7f040000
