@@ -1,5 +1,7 @@
 # AsymmetricGridView
 
+Originally from http://devcodemarket.com/android-app-source-code-android-asymmetric-gridview1
+
 An Android custom ListView that implements multiple columns and variable sized elements.
 
 Please note that this is currently in a preview state.
