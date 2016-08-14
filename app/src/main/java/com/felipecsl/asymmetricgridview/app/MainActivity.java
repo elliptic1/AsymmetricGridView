@@ -1,7 +1,8 @@
 package com.felipecsl.asymmetricgridview.app;
 
+import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v4.*;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -128,7 +129,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             item.setTitle(listView.isDebugging() ? "Disable debugging" : "Enable debugging");
             listView.setAdapter(adapter);
 
-            listView.setSelectionFromTop(index, top);
+            if (Build.VERSION.SDK_INT >= 21) {
+                listView.setSelectionFromTop(index, top);
+            }
         }
         return super.onOptionsItemSelected(item);
     }
