@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    buildToolsVersion "24.0.2"
 
     defaultConfig {
         minSdkVersion 10
         targetSdkVersion 24
-        versionCode 2
-        versionName "1.1"
+        versionCode 3
+        versionName "1.1.1"
     }
 
     compileOptions {
@@ -26,8 +26,9 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:24.1.1'
-    compile 'com.android.support:support-v4:24.1.1'
+    def version = "24.2.1"
+    compile "com.android.support:appcompat-v7:${version}"
+    compile "com.android.support:support-v4:${version}"
     compile project(path: ':library')
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
