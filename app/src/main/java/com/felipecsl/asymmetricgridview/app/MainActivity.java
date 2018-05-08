@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        listView = (AsymmetricGridView) findViewById(R.id.listView);
+        listView = findViewById(R.id.listView);
 
         adapter = new ListAdapter(this, listView, new ArrayList<DemoItem>());
         adapter.appendItems(getMoreItems(50));

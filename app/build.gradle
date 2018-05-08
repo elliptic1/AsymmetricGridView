@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 26
-        versionCode 3
-        versionName "1.1.1"
+        targetSdkVersion 27
+        versionCode 4
+        versionName "1.1.2"
     }
 
     compileOptions {
@@ -25,9 +25,9 @@ android {
 }
 
 dependencies {
-    def version = "26.0.2"
-    compile "com.android.support:appcompat-v7:${version}"
-    compile "com.android.support:support-v4:${version}"
-    compile project(path: ':library')
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    def version = "27.1.1"
+    implementation "com.android.support:appcompat-v7:${version}"
+    implementation "com.android.support:support-v4:${version}"
+    implementation project(path: ':library')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
