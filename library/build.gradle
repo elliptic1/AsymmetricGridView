@@ -3,10 +3,6 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 27
 
-    defaultConfig {
-        versionCode 23
-        versionName "1.0.1"
-    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
